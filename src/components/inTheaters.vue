@@ -33,10 +33,8 @@
       this.$http.jsonp('https://api.douban.com/v2/movie/in_theaters')
         .then(function (response) {
           this.movieMM=response.body.subjects
-          console.log( this.movieMM)
         })
         .catch(function (response) {
-          console.log(response)
         })
     },
     methods: {
@@ -58,7 +56,7 @@
   padding-top: 15px;
 }
   .moive-img img{
-    width: 70px;
+    width: 90px;
   }
   .moive-txt{
     margin-left: 12px;
